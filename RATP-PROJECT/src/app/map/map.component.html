@@ -1,0 +1,16 @@
+<div class="row sectionMap">
+  <div class="locationBtn">
+    <button (click)="geocodeStation()" class="btn-info">Localiser station</button>
+    <div class="clearFix"></div>
+  </div>
+
+  <sebm-google-map  [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+   <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+    <sebm-google-map-marker *ngFor="let m of markers"
+      [latitude]="m.lat"
+      [longitude]="m.lng">
+    </sebm-google-map-marker>
+  </sebm-google-map>
+</div>
+
+

@@ -1,0 +1,90 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-md-3">
+        DESTINATION: {{destinationChild}}
+      </div>
+      <div class="col-md-3">STATION: {{stationChild}}</div>
+      <div class="col-md-3" >ARRIVE dans: {{horaireArriver}}</div>
+      <div class="col-md-3">PROCHAIN bus: {{horaireProchain}}</div>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <div class="bottom-destStat-section">
+      <div class="css-1cqgl9p css-o08ho css-1k8tu3j">
+        <div class="recapitulatif col-md-12">
+          <div class="col-md-6">
+            <ul class="css-dhu3ty css-js40dj css-7lj9xl css-iyhpeb css-1dpi4l8 css-1a24qct">
+              <ng-container *ngIf="lesDestinations[0].name==destinationChild; then ifBlock; else blockElse"></ng-container>
+
+              <ng-template #ifBlock>
+                <li class="css-13azwyo css-gs2x3r css-lxrh91 css-iyhpeb css-1dpi4l8">
+                  <span class="css-w0yocm css-1e8x600 css-1y8eyh css-1yv2jt6 css-7hzrhp css-l6c9n4 css-1lz3n2r css-mqzcce" style="background-image: url(assets/images/busStop.png);"></span>{{lesDestinations[1].name}}
+                </li>
+              </ng-template>
+
+              <ng-template #blockElse>
+                <li class="css-13azwyo css-gs2x3r css-lxrh91 css-iyhpeb css-1dpi4l8">
+                  <span class="css-w0yocm css-1e8x600 css-1y8eyh css-1yv2jt6 css-7hzrhp css-l6c9n4 css-1lz3n2r css-mqzcce" style="background-image: url(assets/images/busStop.png);"></span>{{lesDestinations[0].name}}
+                </li>
+              </ng-template>
+
+              <li class="css-13azwyo css-1uukg01">
+                <!--<span class="css-w0yocm css-1qcxu9b css-1b18bq6 css-16qvk6d css-rdsogp css-1trjy7s css-zdehp" style="background: rgb(55, 241, 88);"></span>-->
+                <button class="css-8z49ja css-1wh46vb css-l6c9n4 css-wn5k45 css-117ocmm css-dw3c54 css-1tb4sl9" (click)="displayListStation()">
+                  <span>
+                    <span class="css-rrf2ji css-193uyzd"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+                  <svg viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke-width="1" fill-rule="evenodd" opacity="0.9">
+                      <g id="chevron">
+                        <path d="M30.321734,27.3209063 C31.4933545,26.1492858 31.4932999,24.2496969 30.321612,23.0781437 L23.1211984,15.8785577 C21.9495582,14.7070522 20.0500633,14.7071614 18.8785577,15.8788016 C17.7070522,17.0504418 17.7071614,18.9499367 18.8788016,20.1214423 L23.9503836,25.2069754 L18.8786797,30.2786793 C17.7071068,31.4502522 17.7071068,33.3497471 18.8786797,34.52132 C20.0502525,35.6928928 21.9497475,35.6928928 23.1213203,34.52132 L30.321734,27.3209063 Z" id="Stroke-9-Copy-3"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                    <span>Liste arrêts</span>
+                  </span>
+                </button>
+              </li>
+              <li [ngStyle]="{display: displayList}" class="css-13azwyo css-gs2x3r css-lxrh91 css-iyhpeb css-1dpi4l8">
+
+                <ng-container *ngIf="destinationIdChild === 'A'; then premierBlock; else secondBlock"> </ng-container>
+
+                <ng-template #premierBlock>
+                  <ul class="css-13azwyo css-dhu3ty css-1a24qct css-10q6zfv">
+                    <span class="css-w0yocm css-1qcxu9b css-1b18bq6 css-16qvk6d css-rdsogp css-1trjy7s css-sa13d4" style="background: #fcc9f4"></span>
+                    <li class="css-13azwyo css-7hzrhp css-1bd7equ midstop" *ngFor="let station of stationsListChild.stations" (click)="getValueList(station.name)">
+                      <span class="css-w0yocm css-1qcxu9b css-1b18bq6 css-16qvk6d css-rdsogp notch css-zs7bgv" style="background: #fcc9f4;"></span><span class="stations">{{station.name}}</span>
+                    </li>
+                  </ul>
+                </ng-template>
+
+                <ng-template #secondBlock>
+                  <ul class="css-13azwyo css-dhu3ty css-1a24qct css-10q6zfv">
+                    <span class="css-w0yocm css-1qcxu9b css-1b18bq6 css-16qvk6d css-rdsogp css-1trjy7s css-sa13d4" style="background: #fcc9f4;"></span>
+                    <li class="css-13azwyo css-7hzrhp css-1bd7equ midstop" *ngFor="let station of stationsListChild.stations | reversePipe" (click)="getValueList(station.name)">
+                      <span class="css-w0yocm css-1qcxu9b css-1b18bq6 css-16qvk6d css-rdsogp notch css-zs7bgv" style="background: #fcc9f4;"></span><span class="stations">{{station.name}}</span>
+                    </li>
+                  </ul>
+                </ng-template>
+              </li>
+
+              <!--<li class="css-13azwyo css-1uukg01">-->
+              <!--<span class="css-w0yocm css-1qcxu9b css-1b18bq6 css-16qvk6d css-rdsogp css-1trjy7s css-zdehp" style="background: rgb(55, 241, 88);"></span>-->
+              <!--</li>-->
+
+              <li class="css-13azwyo css-gs2x3r css-lxrh91 css-iyhpeb css-1dpi4l8">
+                <span class="css-w0yocm css-1e8x600 css-1y8eyh css-1yv2jt6 css-7hzrhp css-l6c9n4 css-1lz3n2r css-mqzcce" style="background-image: url(assets/images/busStop.png);"></span>{{destinationChild}}
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <app-map [stationAddress]="stationChild"></app-map>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

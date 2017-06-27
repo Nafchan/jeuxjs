@@ -1,0 +1,22 @@
+.sebm-google-map-container {
+  height: 300px;
+}
+
+.sectionMap{
+  position: relative;;
+}
+
+.locationBtn{
+  position: absolute;
+  z-index: 999999;
+  width: 100%;
+}
+
+.locationBtn button{
+  position: relative;
+  float: right;
+}
+
+.clearFix{
+  clear: both;
+}

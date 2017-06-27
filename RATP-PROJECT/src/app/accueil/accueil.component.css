@@ -1,0 +1,17 @@
+.header {
+  /*background: rgba(0, 0, 0, 0.2);*/
+  min-height: 100vh;
+  height:100%;
+  position: relative;
+  overflow: hidden;
+}
+.bottom-message-section {
+  margin-top: 21em;
+  position: relative;
+}
+.short-text {
+  margin: auto;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+}

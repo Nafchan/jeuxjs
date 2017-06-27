@@ -1,0 +1,49 @@
+<section class="contact-us" id="contact">
+  <div class="container">
+
+    <!-- SECTION HEADER -->
+    <div class="section-header">
+
+      <!-- SECTION TITRE -->
+      <h2 class="white-text">Nous Contacter</h2>
+
+      <!-- DESCRIPTION CONCERNANT LA SECTION -->
+      <h6 class="white-text">
+        Vous avez des questions? Laissez-nous un message. Nous vous répondrons dans les 24 heures..
+      </h6>
+    </div>
+    <!-- / END SECTION HEADER -->
+
+    <!-- CONTACT FORM-->
+    <div class="row">
+      <form role="form" class="contact-form" id="contact-form" #form="ngForm" (submit)="sendEmail($event,form.value)" #form="ngForm">
+        <div class="wow fadeInLeft animated">
+          <div class="col-lg-4 col-sm-4">
+            <input type="text" name="name" placeholder="Votre Nom" class="form-control input-box" id="name" [(ngModel)]="name">
+          </div>
+          <div class="col-lg-4 col-sm-4">
+            <input type="email" name="email" placeholder="Votre Email" class="form-control input-box" id="email" [(ngModel)]="email">
+          </div>
+          <div class="col-lg-4 col-sm-4">
+            <input type="text" name="subject" placeholder="Objet" class="form-control input-box" id="subject" [(ngModel)]="subject">
+          </div>
+        </div>
+
+        <div class="col-md-12 wow fadeInRight animated">
+          <textarea name="message" class="form-control textarea-box" placeholder="Votre Message" id="message" [(ngModel)]="message"></textarea>
+        </div>
+        <!--&lt;!&ndash; SI L'EMAIL A ETE ENVOYER AVEC SUCCES &ndash;&gt;-->
+        <!--<h4 class="success pull-left white-text">-->
+          <!--Teste : Votre message a été envoyé avec succès.-->
+        <!--</h4>-->
+
+        <!--&lt;!&ndash; Erreur  &ndash;&gt;-->
+        <!--<h4 class="error pull-left white-text">-->
+          <!--le texte d'erreur-->
+        <!--</h4>-->
+        <button class="btn btn-primary custom-button red-btn wow fadeInLeft animated" id="submit" type="submit">Envoyer</button>
+      </form>
+    </div>
+    <!-- / END CONTACT FORM-->
+  </div> <!-- / END CONTAINER -->
+</section> <!-- / END CONTACT US SECTION-->

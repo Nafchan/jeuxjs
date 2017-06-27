@@ -1,0 +1,63 @@
+<!--<h1>-->
+  <!--{{title}}-->
+<!--</h1>-->
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Ligne Bus 108</h3>
+    </div>
+    <div class="panel-body">
+      <div class="bottom-destStat-section">
+        <!-- OTHER FOCUS DESTINATION -->
+        <div class="other-focuses other-focuses-destination">
+          <h5><span class="section-footer-title">Destination</span></h5>
+        </div>
+
+        <!-- DESTINATION -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="funkyradio">
+              <div class="funkyradio-success" *ngFor="let dest of destination">
+                <input type="radio"
+                       name="radio"
+                       id={{dest.way}}
+                       value={{dest.name}}
+                       (click)="getDest($event)"/>
+                <label for={{dest.way}}>{{dest.name}} </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATIONS -->
+        <!-- OTHER FOCUS STATIONS -->
+        <div class="other-focuses other-focuses-station">
+          <h5><span class="section-footer-title">Station</span></h5>
+        </div>
+        <!-- Other Station -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="custom-select">
+              <select id="fxselect" name="fxselect" [(ngModel)]="dataStatName" >
+                <option value="-1" selected="">Choisissez votre station</option>
+                <option *ngFor="let stat of stations.stations"
+                        [ngValue]="stat.name">{{ stat.name }}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <horaire-recap *ngIf="dataStatName!='' && dataDestName!=''"
+                     [stationChild]="dataStatName"
+                     [stationsListChild]="stations"
+                     [destinationChild]="dataDestName"
+                     [destinationIdChild]="dataDestId"
+                     [lesDestinations]="destination">
+  </horaire-recap>
+
+</div>

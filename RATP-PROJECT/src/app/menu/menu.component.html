@@ -1,0 +1,23 @@
+<div  [ngSwitch]="currentUrl">
+
+  <div *ngSwitchCase="urlPlan" class="btn-group btn-group-justified">
+    <a [routerLink]="['/accueil']" class="btn btn-change btn-default">Accueil</a>
+    <a [routerLink]="['/horaire']" class="btn btn-change btn-default">Horaire</a>
+    <a [routerLink]="['/contact']" class="btn btn-change btn-default">Contact</a>
+  </div>
+
+  <div *ngSwitchCase="urlHoraire" class="btn-group btn-group-justified">
+    <a [routerLink]="['/accueil']" class="btn btn-change btn-default">Accueil</a>
+    <a [routerLink]="['/plan']" class="btn btn-change btn-default">Plan</a>
+    <a [routerLink]="['/contact']" class="btn btn-change btn-default">Contact</a>
+  </div >
+
+  <div *ngSwitchCase="urlContact" class="btn-group btn-group-justified">
+    <a [routerLink]="['/accueil']" class="btn btn-change btn-default">Accueil</a>
+    <a [routerLink]="['/horaire']" class="btn btn-change btn-default">Horaire</a>
+    <a [routerLink]="['/plan']" class="btn btn-change btn-default">Plan</a>
+  </div >
+
+  <div *ngSwitchDefault [ngStyle]="{'display': 'none'}"></div>
+</div>
+

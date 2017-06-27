@@ -1,0 +1,33 @@
+.divPlan{
+  position: relative;
+}
+
+button {
+  border: 0px;
+  padding: 10px;
+  background: #56CCF2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-box-shadow: -2px -3px 35px 5px rgba(196,230,255,1);
+  -moz-box-shadow: -2px -3px 35px 5px rgba(196,230,255,1);
+  box-shadow: -2px -3px 35px 5px rgba(196,230,255,1);
+}
+button:hover
+{
+  background: #B2FEFA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  cursor: pointer;
+}
+a{
+  color:white !important ;
+
+}
+a:hover
+{
+  color:white!important;
+}
+

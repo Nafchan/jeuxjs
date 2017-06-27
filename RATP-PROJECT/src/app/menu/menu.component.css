@@ -1,0 +1,27 @@
+.btn-change
+{
+  background: #63e0ff;
+  background-image: -webkit-linear-gradient(top, #63e0ff, #2bc1e6);
+  background-image: -moz-linear-gradient(top, #63e0ff, #2bc1e6);
+  background-image: -ms-linear-gradient(top, #63e0ff, #2bc1e6);
+  background-image: -o-linear-gradient(top, #63e0ff, #2bc1e6);
+  background-image: linear-gradient(to bottom, #63e0ff, #2bc1e6);
+  -webkit-box-shadow: 0px 4px 17px #76a0e8;
+  -moz-box-shadow: 0px 4px 17px #76a0e8;
+  box-shadow: 0px 4px 17px #76a0e8;
+  border: solid #ffffff 1px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.btn-change:hover
+{
+  background: #99ebff;
+  background-image: -webkit-linear-gradient(top, #99ebff, #9cf0ff);
+  background-image: -moz-linear-gradient(top, #99ebff, #9cf0ff);
+  background-image: -ms-linear-gradient(top, #99ebff, #9cf0ff);
+  background-image: -o-linear-gradient(top, #99ebff, #9cf0ff);
+  background-image: linear-gradient(to bottom, #99ebff, #9cf0ff);
+  text-decoration: none;
+}
