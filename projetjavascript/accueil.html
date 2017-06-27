@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title>Catdress</title>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+		<script src="script.js"></script>
+	</head>
+	<body>
+<header>
+
+    <h1>Cat Dress</h1>
+    <p id="texte">Bienvenue sur le jeu Cat Dress! La règle du jeu est très simple! Notre ami Papatte a besoin de s'habiller! Il suffit juste de glisser son accessoire de tete, ses cheveux et son habit pour qu'il soit vêtu, biensûr libre à votre imagination! Vous pouvez lui choisir d'être une fille ou un garçon en appuyant sur les boutons "Fille" ou "Garçon", et si vous voulez tout recommencer, appuyez sur "Retirer". Amusez-vous!</p>
+</header>
+<div id="fond">
+<table id="objets"><!-- la table contient tous les objets "deplacer" à mettre sur l'avatar-->
+
+   <tr ><!--  Les accessoires de tete-->
+
+       <td id="place"><div class="deplacer accessoire case0"><img id="couronne" src="images/couronne.png" style="width:100px"><img id="etoile" src="images/etoile.png" style="width:100px;display:none"></div></td>
+       <td id="place1"><div class="deplacer accessoire case1"><img src="images/chapeau.png" id="chapeau" style="width:150px"><img id="fleur" src="images/fleur1.png" style="width:150px;display:none"></div></td>
+       <td id="place2"><div class="deplacer accessoire case2" ><img src="images/lunettes.png" id="lunettes1" style="width:188px"><img src="images/lunettes2.png" id="lunettes2" style="width:188px;display:none" ></div></td>
+
+       
+
+   </tr>
+
+   <tr ><!--  Les coupes de cheveux-->
+
+   
+
+        <td id="place3"><div class="deplacer coiffure case3"><img src="images/cheveux1.png" id="cheveuxgarcon1" style="width:200px"><img src="images/cheveux5.png" id="cheveuxfille1" style="width:200px;display:none"></div></td>
+        <td id="place4"><div class="deplacer coiffure case4"><img src="images/cheveux2.png" id="cheveuxgarcon2" style="width:180px "><img id="cheveuxfille2" src="images/cheveux4.png" style="width:180px;display:none"></div></td>
+        <td id="place5"><div class="deplacer coiffure case5" ><img id="cheveuxgarcon3" src="images/cheveuxpunk.png" style="width:190px "><img id="cheveuxfille3" src="images/cheveux3.png"  style="width:190px;display: none "></div></td>
+
+   </tr>
+  
+    <tr ><!--  les vêtements -->
+
+   
+        <td id="place6"><div class="deplacer buste case6"><img src="images/robe.png" id="robe" style="width:186.25px;display:none"><img src="images/cape.png" id="cape" style="width:186.25px"></div></td>
+        <td id="place7"><div class="deplacer buste case7"><img src="images/haut1.png" id="hautgarcon" style="width:199px"><img src="images/haut2.png" id="hautfille" style="width:199px;display:none"></div></td>
+        <td id="place8"><div class="deplacer buste case8" ><img src="images/cravate1.png" id="cravate" style="width:185px"><img src="images/sac.png" id="sac" style="width:185px;display:none"></div></td>
+
+         
+
+   </tr>
+
+    
+
+</table>
+
+
+
+<table id="avatar" ><!-- cette table contient les différentes parties du chat-->
+
+   <tr ><!-- tete du chat-->
+
+       <td class="chat c a"> <img src="images/chattete.png" id ="tetechat" style="width: 200px ;margin-bottom: -4.9%"></td>
+       <td id="cotedroit"></td>
+
+      
+
+   </tr>
+    <tr ><!-- buste du chat-->
+
+      
+          <td class="chat b"> <img src="images/chathaut.png" id="bustechat" style="width: 200px ; margin-bottom: -5%"></td>
+            
+
+   </tr>
+   
+    <tr ><!-- pied du chat-->
+
+          <td class="chat ch"> <img src="images/chatpied.png" id="piedchat" style="width: 200px; margin-right: 1%"></td>
+         
+
+   </tr>
+ <tr >
+
+         
+         <td></td>
+
+   </tr>
+
+</table>
+<button id="bouton">Retirer</button><br>
+<button id="Garcon">Garçon</button>
+<button id="Fille">Fille</button>
+</div >
+<footer>
+  
+  <p> Si vous avez un commentaire à faire sur le jeu, vous pouvez me contacter en cliquant ici:
+  <a href="mailto:n.vanelsen@hotmail.com"> Contactez moi!</a></p>
+  <p>Bonne journée à vous!</p>
+</footer>
+	</body>
+</html>

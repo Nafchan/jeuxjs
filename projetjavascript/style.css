@@ -1,0 +1,123 @@
+*
+{
+	
+}
+.deplacer
+{
+	display: inline;
+	float: left;
+	margin-bottom: 5%;
+	color: white;
+	padding: .5em;
+	cursor: grab;
+}
+h1
+{
+	font-family: 'Pacifico', cursive;
+	font-size: 60px;
+	width: 30%;
+	margin-left: 32%;
+	text-align: center;	color: white;
+	background-color: deepskyblue ;
+	border:10px dotted peachpuff;
+
+
+}
+#texte
+{
+	
+	background-color:yellowgreen ;
+	font-family: 'Lobster Two', cursive;
+	font-size: 20px;
+	padding: 5%;
+	text-align: center;	
+	color: white;
+	
+}
+.deplacer.en-mouvement
+{
+	cursor: grabbing;
+
+}
+
+.deplacer:nth-child(2)
+{
+	top: 100px;
+}
+
+
+table, .table
+{
+	float: left;
+
+}
+
+#fond{
+	padding: 2%;
+	margin-left: 5%;
+	border:10px groove white;
+	height:420px;
+	width: 1000px;
+	background-image: url('images/wall1.png');text-align: center;
+	
+}
+
+.chat
+{
+
+	border-collapse: collapse;
+
+}
+#Garcon:hover
+{
+	background-color: cornflowerblue;
+}
+#Fille:hover
+{
+	background-color: lightcoral;
+}
+#bouton:hover
+{
+	background-color:lightsalmon;
+}
+#Garcon
+{
+	color:white;
+	background-color: royalblue;
+	border:5px double white;
+
+}
+#Fille
+{
+	color: white;
+	background-color: deeppink;
+	border:5px double white;
+}
+#bouton
+{
+	color:white;
+	background-color: coral;
+	border:5px double white;
+
+}
+footer
+{
+
+	background-color:mediumorchid ;
+	font-family: 'Lobster Two', cursive;
+	font-size: 20px;
+	padding: 5%;
+	margin-top: 2%;
+	text-align: center;	
+	color: white;
+	position: relative;
+}
+a 
+{
+   text-decoration: none;
+   color: pink;
+}
+a:hover
+{
+	color:lemonchiffon;
+}
