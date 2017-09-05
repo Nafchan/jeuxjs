@@ -1,0 +1,73 @@
+#indexp1 a 
+{
+	color:steelBlue;
+}
+#texteCache
+{
+	display: none;
+}
+#calculatrice
+{
+	width: 400px;
+	margin-top: 150px;
+	background-color: lightGrey;
+	font-size: 1.2em;
+	padding: 1%;
+	margin-right: 10%;
+}
+#calculatrice td:hover
+{
+	cursor: pointer;
+}
+td
+{
+
+	background-color: #435672;
+	color:lightBlue;
+	text-align: center;
+	height: 80px;	
+	width: 80px;
+}
+td:hover
+{
+	background-color: lightBlue;
+	color: #435672;
+}
+#affiche
+{
+	background-color: #c4dafc;
+	height: 50px;
+	padding: 2%;
+	color: #435672;
+	text-align:left;
+	padding-left: 2%;
+
+}
+footer
+{
+	position:absolute;
+	bottom: 0;
+	right: 0;	
+	margin-bottom: 2%;
+}
+hr
+{
+	margin-bottom: 2%;
+}
+#blockDrop, #calculatrice
+{
+	float:left;
+	width: 45%;
+}
+#blockDrop
+{
+	height:400px;
+	background-color: lightBlue;
+	margin-top: 150px;
+
+}
+#test
+{
+	display: block;
+	width: 100%;
+}

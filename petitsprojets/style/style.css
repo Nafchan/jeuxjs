@@ -1,0 +1,219 @@
+/* Generale*/
+*{
+	margin: auto;
+	padding:auto;
+}
+body
+{
+	font-size: 1em;
+	font-family: Arial;
+	background-color: #f5f5f5;
+	color:#383838;
+}
+/*header*/
+nav
+{
+	background-color: black;
+	padding: 15px 0px 15px 0px;
+	position: fixed;
+	width: 100%;
+	top:0px;
+	left: 0px;
+}
+li 
+{
+	display:inline-block;
+	margin-right: 10px;
+	
+}
+a, select{
+	color:#ccc;
+	cursor:pointer;/*mettre par defaut*/
+	text-decoration: none;
+	font-size: 0.875em;
+}
+
+
+/*le reste*/
+p{
+	color:grey;
+}
+#image
+{
+	width: 100%;
+}
+
+#indexp3
+{
+		
+	border-left: 1px solid grey;
+}
+#indexp3 h2, #indexp3 p
+{
+	margin-left: 5px;
+}
+#indexp2, #indexp3
+{
+	float: left;
+	overflow: hidden;
+	width: 45%;
+	display: inline-block;
+	position: relative;
+}
+h1, h2
+{
+	margin:15px 0 30px 0;
+}
+.paragraphe
+{
+	margin: 10px;
+	text-align: justify;
+	margin-bottom: 30px;
+
+}
+#indexp1
+{
+	margin-top: 50px;
+	padding-bottom: 10px;
+}
+header a:hover
+{
+	color:#fff;
+	}
+.lien a
+{
+	
+	text-decoration: none;
+	background-color: black;
+	padding: 10px;
+	color:grey;
+	border-radius: 25px;
+}
+#lienhaut
+{
+	position: absolute;
+	margin-top: 10px;
+	right: 20px;
+}
+#lienbas
+{
+	position: absolute;
+	
+	right: 200px;
+}
+#hrportable
+{
+	display: none;
+}
+/*footer*/
+footer
+{
+	text-align: right;
+	display:inline-block;
+	width: 100%;
+	
+	bottom: 0;
+	right: 0;
+
+}
+footer li a
+{
+	display: block;
+	color:steelBlue;
+	text-decoration: underline;
+	float: right;
+}
+footer li a:hover
+{
+	color: steelBlue;
+}
+/*media queries*/
+
+/*tablette*/
+@media (max-width: 650px)
+{
+	#navigation{
+		
+		font-size: 65%;
+	}
+	#paragraphe
+	{
+		font-size: 0.875em;	
+	}
+}
+
+.menu2
+{
+	display: none;
+}
+.menuBurger
+{
+	color: white;
+	display: none;
+}
+/*portable*/
+@media (max-width: 426px)
+{
+	body
+	{
+		
+		font-size: 0.875em;
+	}
+	.menuBurger span
+	{
+		float: right;
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		background-color: black;
+		color: white;
+		padding: 15px;
+		border-radius: 25px;}
+	.menuBurger
+	{
+		display: block;
+		color: white;
+		background-color: black;
+		right: 0;
+		top:0;
+		position: fixed;
+		font-size: 1em;
+
+		width: 100%;
+	}
+	.menuBurger .menu2
+	{
+		padding: 10px;
+	}
+	 .menuBurger:hover .menu2
+	
+	{
+		display: block;
+		background-color: black;
+		
+	}
+
+	#navigation
+	{
+		display: none;
+	}
+	.paragraphe
+	{
+		width: 90%!important;
+
+	}
+	#indexp3
+	{
+		border-left: none!important;
+		border-top: 1px solid grey;
+
+	}
+
+	/*.menu2:hover
+	{
+		background-color: grey!important;
+		color:red;
+	}*/
+
+	
+}

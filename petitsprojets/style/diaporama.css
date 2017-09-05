@@ -1,0 +1,128 @@
+.photos
+{
+	display: none;
+	border:20px solid white;
+	width: 70%;
+}
+
+.photosm
+{
+	display: inline-block;
+	width: 5%;
+	opacity: 0.5;
+	cursor: pointer;
+
+}
+#miniature
+{
+	margin: 10px;
+	background-color: rgba(51, 1, 40, 0.5);
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+#photo1
+{
+	display: inline;
+}
+#photo1m
+{
+	opacity:1;
+}
+#textePrincipal
+{
+	width: 50%;
+	/* Trés important: c'est ce qui permet de décaler ce div en JS avec "left: ...px;" */
+	position: relative; 
+	/* Eviter les petits espaces entre les images */
+	font-size: 0;
+	/* initialisation à 0 (défaut "auto") : nécessaire sur Chrome */
+	left: 0;
+}
+#diapo
+{
+	border-top:30px solid black;
+		border-bottom:50px solid black;
+	
+	/* On le restreint exactement à la taille d'une seule image. */
+	width: 100%;
+	height: 90%;
+   background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(17, 195, 255), rgb(249, 99, 202)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(17, 195, 255), rgb(249, 99, 202)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(17, 195, 255), rgb(249, 99, 202)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(17, 195, 255), rgb(249, 99, 202)); /* Standard syntax */
+	/* Tout ce qui déborde est caché. Donc, une seule image n'est visible. */
+	overflow: hidden;
+	/* Ceci sert uniquement pour créer un containing block  */
+	/* qui permet de positionner les flêches avec position: absolute  */
+	position: relative;
+	text-align: center;
+}
+#fgauche
+{
+	float: left;
+
+	box-shadow: 5px 5px rgb(0, 255, 140);	
+}
+#fdroite
+{
+	float:right;
+	box-shadow: -5px 5px rgb(0, 255, 140);	
+	
+}
+#fdroite,#fgauche, .fa-pause-circle-o, .fa-play-circle-o
+{
+
+	background-color: rgb(9, 25, 51);
+	padding: 10px;
+	border-radius: 50px;
+	font-size: 35px;
+	margin: 1%;
+	width: 5%;
+	color:rgb(0, 191, 255);
+	cursor: pointer;
+
+} 
+.fa-pause-circle-o:hover
+{
+	background-color: teal;
+}
+.fa-play-circle-o:hover
+{
+	background-color: teal;
+}
+#fdroite:hover
+{
+	background-color: teal;
+}
+#fgauche:hover
+{
+	background-color: teal;
+}
+h1
+{
+	background-color: black;
+	color:rgb(2, 193, 204);
+	margin-bottom: 0;
+	margin-top: 48px;
+	text-align: center;
+	font-weight: lighter;
+	 text-shadow: 2px 2px 3px red;
+}
+/*#pop-up
+{
+	position:absolute;
+	
+	color: white;
+	z-index: 5;
+	border: 1px solid black;
+}*/
+.aSonTour
+{
+	color:rgb(2, 193, 204);
+}
+.fa-circle
+{
+	padding-top: 10px;
+	
+}

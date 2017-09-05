@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-type" content='text/html'>
+	<title>Cookies</title>
+</head>
+<script type="text/javascript">
+	function creerCookie(asNomCookie, asValeur)
+	{
+		var dExpires= new Date();
+		dExpires.setYear(2025);
+		document.cookie= asNomCookie+"="+asValeur+";expires="+dExpires.toGMTString();
+		
+	}
+	function recupCookie()
+	{
+		var cookieNom = document.cookie;
+		console.log(cookieNom);	
+		var tableau=cookieNom.split("=");
+		console.log(tableau);
+		return (tableau[1]);	
+	}
+	function valider()
+	{
+		var sPrenom= document.getElementById("tb_prenom").value;
+		var lbl_resultat=document.getElementById("lbl_resultat");
+		if (navigator.cookieEnabled)
+		{
+			creerCookie("cookPrenom",sPrenom);
+			lbl_resultat.innerHTML="<br/> Le cookie est enregistré bienvenue "+recupCookie();
+			recupCookie();
+		}
+		else
+		{
+			lbl_resultat.innerHTML="<br/> Vous refusez les cookies";
+		}
+
+	}
+</script>
+<body>
+<h1>Creation cookies</h1>
+<label>Prenom</label>
+<input type="text" name="prenom" id="tb_prenom"/>
+<button onclick="javascript:valider()">envoyer</button>
+<label id="lbl_resultat"></label>
+</body>
+</html>

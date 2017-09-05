@@ -1,0 +1,100 @@
+input[type=range]
+{
+	padding-left:0px;
+	padding-right:0px;
+}
+body
+{
+	background-image: url(../sakura.png) ;
+	background-repeat: no-repeat;
+	
+	background-attachment: fixed;
+}
+
+progress
+{
+	margin-left: 20%;
+	margin-right: auto;
+	width: 50%;
+	margin-top: 20%;
+}
+
+#indexp1 input
+{
+	text-align: center;
+	margin: 1%;
+	border:3px solid white;
+	height: 30px;
+}
+#indexp1 input:hover
+{
+	border:3px solid pink;
+}
+progress
+{
+	width: 200px;
+	margin:1%;
+	height: 40px;
+
+}
+
+#indexp1
+{
+	border-radius: 25px;
+	margin-top: 5%;
+	background-color: rgba(255, 239, 245,0.9);
+	color:#2d282c;
+	width: 1000px;
+	margin-left: 25%;
+
+}
+#pEncadrer
+{
+	color:rgb(239, 215, 234);
+	background-color: #2d282c;
+	border-bottom: 8px solid pink;
+
+	overflow: hidden;
+	display: block;
+}
+h1
+{
+	padding-left: 5%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	font-weight: lighter;
+	color: #fff7fa;
+}
+#chrono
+{
+	border: 5px solid #fff7fa;
+	border-radius: 35px;
+	width: 50px;
+	padding: 4px;
+	margin-right: 5%;
+	font-size: 40px;
+	float:right;
+	margin-bottom: 3%;
+	text-align: center;
+
+}
+#questionnaire
+{
+	padding-top: 3%;
+	padding-left: 5%;
+}
+#ressaye, #envoie
+{
+	background-color: #7bb768;
+	color:white;
+	border:0px;
+	padding:2%;
+	float:right;
+	margin-right: 2%;
+}
+#ressaye:hover, #envoie:hover
+{
+	background-color: #b8eda8;
+	cursor: pointer;
+}

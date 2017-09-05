@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8"/>
+		<meta author="nafissa"/>
+		<meta keywords="html"/>
+		<meta description="descriptions"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- adaptation aux différents support-->
+		<title>Progress</title>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/progress.css">
+		<script type="text/javascript" src="js/progress.js"></script>
+		
+</head>
+<body>
+		<header>
+			<div class="menuBurger"> <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+			<ul >
+					
+					<li class="menu2"><a href="calculatrice.html">CALCULATRICE</a></li>
+					<li class="menu2"><a href="connexion.html" >CONNEXION</a></li>
+					<li class="menu2"><a href="progress.html">PROGRESS</a></li>
+					<li class="menu2"><a href="svg.html" >SVG</a></li>
+					<li class="menu2"><a href="cookie.html">COOKIE</a></li>
+					<li class="menu2"><a href="diaporama.html">DIAPORAMA</a></li>
+				</ul></div>
+				
+			<nav id="navigation">
+				
+				<ul >
+					
+					<li><a href="calculatrice.html">CALCULATRICE</a></li>
+					<li><a href="connexion.html" >CONNEXION</a></li>
+					<li><a href="progress.html">PROGRESS</a></li>
+					<li><a href="svg.html" >SVG</a></li>
+					<li><a href="cookie.html">COOKIE</a></li>
+					<li><a href="diaporama.html">DIAPORAMA</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div id="textePrincipal">
+			<div id="indexp1" class="paragraphe">
+			<div id="quizz">
+					<div id="pEncadrer">
+						<h1>Questionnaire très simple</h1>
+						<div id="chrono"></div>
+					</div>
+				<div id="questionnaire">
+					<div>Quelle est la couleur du camion rouge?</div>
+					<input id="question1" type="text" name="">
+					<div>Quand il pleut, les nuages sont de quelle couleur?</div>
+					<input id="question2" type="text" name="">
+					<div>2+1?</div>
+					<input id="question3" type="text" name="">
+					<div>Quel est la capitale du Japon?</div>
+					<input id="question4" type="text" name="">
+					<div>Quel est l'animal avec une moustache, des poils, avec 4 pattes, et qui dit Miaou?</div>
+					<input id="question5" type="text" name="">
+					<button id="envoie"> ENVOYER</button>
+					<div>Nombre de questions remplies</div>
+					<progress id="mesure" min="0" max="100" value="0"></progress>
+					<div>Nombre de bonnes réponses </div>
+					<progress id="barre" min="0" high="20" max="100" value="0" ></progress>
+					<button id="ressaye" onclick="javascript:ressayer()">TOUT RECOMMENCER</button>
+
+				</div>
+			</div>
+				
+			<!--<nav>
+				<a href="accueil.html">Accueil</a>
+				<a href="progress.html">Progress</a>
+				<a href="range.html">Range</a>
+				<a href="date.html">Date</a>
+			</nav>
+			<progress id="progCtrl"  max="100"> marche pas</progress>
+			<input type="range" id="rangeCtrl" name="" min="0" max="100" step="5" value="50" />
+			<input type="text" name="" id="valeur">
+			<meter id="idKiwi" min="0" max="100" value="50"></meter>
+			-->
+		</div>
+		</div>
+		
+		<footer>
+		
+			<ul>
+				
+				<li><a href="">Mentions légales</a></li>
+				<li><a href="">Copyright</a></li>
+			</ul>
+		</footer>
+</body>
+
+</html> 

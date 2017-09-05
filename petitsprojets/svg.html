@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8"/>
+		<meta author="nafissa"/>
+		<meta keywords="html"/>
+		<meta description="descriptions"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- adaptation aux différents support-->
+		<title>SVG</title>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/svg.css">
+		<script type="text/javascript" src="js/svg.js"></script>
+		
+</head>
+<body id="mainPage">
+		<header>
+			<div class="menuBurger"> <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+			<ul >
+					
+					<li class="menu2"><a href="calculatrice.html">CALCULATRICE</a></li>
+					<li class="menu2"><a href="connexion.html" >CONNEXION</a></li>
+					<li class="menu2"><a href="progress.html">PROGRESS</a></li>
+					<li class="menu2"><a href="svg.html" >SVG</a></li>
+					<li class="menu2"><a href="cookie.html">COOKIE</a></li>
+					<li class="menu2"><a href="diaporama.html">DIAPORAMA</a></li>
+				</ul></div>
+				
+			<nav id="navigation">
+				
+				<ul >
+					
+					<li><a href="calculatrice.html">CALCULATRICE</a></li>
+					<li><a href="connexion.html" >CONNEXION</a></li>
+					<li><a href="progress.html">PROGRESS</a></li>
+					<li><a href="svg.html" >SVG</a></li>
+					<li><a href="cookie.html">COOKIE</a></li>
+					<li><a href="diaporama.html">DIAPORAMA</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div id="textePrincipal">
+			<div id="indexp1" class="paragraphe">
+			<svg height="800" width="1500">
+			<svg x="50" y="50"><!--svg decor-->
+			<defs> 
+			<!-- couleur bleu ciel-->
+				<linearGradient id="myLinearGradient1" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad"> 
+					<stop offset="0%" id="coul1" stop-color="rgb(191, 235, 255)" stop-opacity="1"/> 
+					<stop offset="100%" stop-color="#5cbce8" stop-opacity="1"/> 
+				</linearGradient> 
+			</defs> 
+			<defs> <!--couleur verdure-->
+				<linearGradient id="myLinearGradient2" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad"> 
+					<stop offset="0%" stop-color="#ddff96" stop-opacity="1"/> 
+					<stop offset="100%" stop-color="#52d136" stop-opacity="1"/> 
+				</linearGradient> 
+			</defs> 
+			<defs> <!--couleur verdure-->
+				<linearGradient id="myLinearGradient3" fx="45%" fy="45%" r="65%" spreadMethod="pad"> 
+					<stop  offset="0%" stop-color="pink" stop-opacity="1"/> 
+					<stop offset="100%" stop-color="#fc55ca" stop-opacity="1"/> 
+				</linearGradient> 
+			</defs> 
+			<defs><!--blur-->
+			    <filter id="blur1" x="-20" y="-20" width="200" height="200" >
+			      <feGaussianBlur in="SourceGraphic"  stdDeviation="15" />
+			    </filter>
+			  </defs>
+			  <defs><!--blur-->
+			    <filter id="blur2" x="-20" y="-20" width="200" height="200" >
+			      <feGaussianBlur in="SourceGraphic"  stdDeviation="30" />
+			    </filter>
+			  </defs>
+
+			<rect  x="0" y="0" width="1500" height="750" id="ciel" fill="url(#myLinearGradient1)"/>
+			<circle id="soleil" cx="1250" cy="10" r="200" filter=" url(#blur1)" style="opacity:0.7; fill:#fffa00	;"/>
+			<circle id="lune" cx="400" cy="900" r="150"  style="opacity:0; fill:#fcfdff" filter="url(#blur2)" />
+			<circle id="lune2" cx="400" cy="900" r="100"  style="opacity:0.5; fill:#fcfdff"/>
+
+			<rect  x="0" y="400" width="1500" height="400" fill="url(#myLinearGradient2)"/>
+			<ellipse cx="690" cy="620" rx="200" ry="70"  style="fill:url(#myLinearGradient1);"/>
+			
+			<rect  x="100" y="160" width="60" height="350" fill="brown"/>
+			<circle cx="130" cy="160" r="160" fill="url(#myLinearGradient3)"/>
+			<rect  x="800" y="260" width="60" height="350" fill="brown" transform="scale(0.7)"/>
+			<circle cx="830" cy="260" r="160" fill="url(#myLinearGradient3)" transform="scale(0.7)"/>
+			
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+					<svg id="perso" x="0" y="0"><!--"svg du personnage"-->
+					<!--<polyline points="110,330 210,200 50,262 110,330" style="stroke:#006600; stroke-width: 2; fill: #33cc33;"/> -->
+					<defs>
+						<g id="personnagedef" x="0" y="0">
+						<circle cx="250" cy="230" r="60" fill="purple"/>
+
+						<rect x="190" y="230" height="60" width="120" fill="#b735a6"/>
+						<rect x="190" y="290" width="120" height="40" fill="#aaf7e7"/>
+
+						<rect x="190" y="330" width="120" height="150" fill="#b735a6"/>
+						
+						<circle cx="180" cy="90" r="60" fill="brown"/> 
+						<g transform="rotate(5)">
+						<polyline points="180,30 160,80 250,90" style="fill:#f7e380; "/> 
+						</g>
+						
+						<circle cx="180" cy="45" r="11" style="fill:#d61604"/>
+						<circle cx="155" cy="95" r="11" style="fill:#d61604"/>
+						<circle cx="320" cy="90" r="60" fill="brown"/>
+						<g transform="rotate(335)">
+						<rect x="150" y="200" width="200" height="10" style="fill:#3be7ed" />
+						</g>
+						<g transform="rotate(345)">
+						<rect x="150" y="180" width="200" height="10" style="fill:#d2f28c"/>
+
+						</g>
+						<circle cx="250" cy="140" r="60" fill="white"/> </circle>
+
+						<defs>
+						<clipPath id="clipP">
+							<rect x="180" y="50" width="150" height="85"  />
+						</clipPath>
+						</defs>
+						<g style="clip-path: url(#clipP);">
+							<circle cx="250" cy="130" r="60"  style="stroke: none; fill: brown;" >
+							</circle>
+						</g>
+						<path  d="M230,150 Q215,160 200,150" style="stroke: black; stroke-width:3; fill:none;"/>
+						<path d="M295,150 Q280,160 265,150" style="stroke: black; stroke-width:3; fill:none;"/>
+						<circle cx="205" cy="170" r="10" fill="pink"/>
+						<circle cx="295" cy="170" r="10" fill="pink"/>
+						<path d="M232,180 Q247,190 262,180" style="stroke: black; stroke-width:4; fill:none;"/></path>
+						<!--<svg y="13" height="400" >
+						<rect x="270" y="0" height="150" width="50" transform="rotate(40)" fill="#b735a6"/>
+
+						</svg>
+						<svg height="400" width="400" transform="rotate(310)" x="0" y="340">
+						<rect y="0" height="150" width="45" fill="#b735a6" x="0"></rect>
+
+						</svg>-->
+						<line style="stroke:#b735a6; stroke-width:50; " y1="290" x1="110" x2="225" y2="204"></line>
+						<line style="stroke:#b735a6; stroke-width:50; " y1="290" x1="390" x2="275" y2="204"></line>
+						<line style="stroke:#aaf7e7; stroke-width:30; " y1="300" x1="300" y2="196" x2="195"></line>
+						<line y2="250" x2="260" style="stroke:#aaf7e7; stroke-width:25; " y1="194" x1="300.6"></line>
+						</g>
+					</defs>
+					
+		<use xlink:href="#personnagedef" x="180" y="100" id="perso2" height="1000"
+		width="1000"/>
+		<rect  x="900" y="140" width="60" height="350" fill="brown" transform="scale(1.2)"/>
+			<circle cx="930" cy="164" r="160" fill="url(#myLinearGradient3)"  transform="scale(1.2)"/>
+			<!--petales-->
+			<circle id="petales1" cx="950" cy="150" r="10" style="fill:#d82b93;" />
+			<circle id="petales2" cx="1100" cy="170" r="10" style="fill:#d82b93;"/>
+			<circle id="petales3" cx="980" cy="190" r="10" style="fill:#d82b93;"/>
+			<circle id="petales4" cx="1200" cy="290" r="10" style="fill:#d82b93;"/>
+			<circle id="petales5" cx="1200" cy="210" r="10" style="fill:#d82b93;"/>
+			<circle  id="petales6" cx="1150" cy="70" r="10" style="fill:#d82b93;"/>
+					</svg>
+				</svg>
+				</svg>
+			</svg>
+
+			</div>
+			<div style="background-color: pink;padding:1%;float:right;position: absolute;left:100px;" id ="bouton" onclick="javascript:startAnimation();">pause</div>
+			<div style="background-color: pink;padding:1%;float:right; position: absolute;" id ="bouton" onclick="javascript:stopAnimation();">démarrer</div>
+		</div>
+		
+		<!--<footer>
+		
+			<ul>
+				
+				<li><a href="">Mentions légales</a></li>
+				<li><a href="">Copyright</a></li>
+			</ul>
+		</footer>-->
+</body>
+<script type="text/javascript">
+
+var tableauPetales=['petales1','petales2','petales3','petales4','petales5','petales6'];
+var newCoul1;
+var newCoul2;
+var soly=document.getElementById("soleil").getAttribute("cy");
+var luny=document.getElementById("lune").getAttribute("cy");
+var luny2=document.getElementById("lune2").getAttribute("cy");
+var x = document.getElementById("perso2").getAttribute("x");
+var rayon=document.getElementById(tableauPetales[0]).getAttribute("r");
+var petRay=parseInt(rayon);
+var nex =  parseInt(x);
+var solnewy=parseInt(soly);
+var lunnewy=parseInt(luny);
+var lunnewy2=parseInt(luny2);
+var timerFunction = null; 
+var timerFruit = null; 
+
+var couleur1=document.getElementById('coul1').getAttribute("stop-color");
+couleur1=couleur1.substring(4, couleur1.length-1)
+         .replace(/ /g, '')
+         .split(',');
+
+function startAnimation() { 
+	if(timerFunction == null ) { 
+		timerFunction = setInterval(animer, 20); 
+	} 
+	if(timerFruit ==null){
+		timerFruit = setInterval(animerFruit, 100); 	
+	}
+} 
+function stopAnimation() { 
+	if(timerFunction != null){ 
+		clearInterval(timerFunction); 
+		
+		timerFunction = null; 
+	} 
+	if(timerFruit !=null){
+		clearInterval(timerFruit);
+		timerFruit=null;
+	}
+} 
+var rg1=255;
+var rg2=17;
+var rg3=255;
+var op=0;
+var compteurFruit=0;
+function animerFruit (){
+	compteurFruit+=0.5;
+	for (var i=0;i<tableauPetales.length;i++)
+	{
+
+	if(compteurFruit <5 ) {
+			petRay= 10 + compteurFruit;
+			document.getElementById(tableauPetales[i]).setAttribute("r",petRay);
+		}
+		else if(compteurFruit< 10)
+		{
+			petRay= 20 - compteurFruit;
+			document.getElementById(tableauPetales[i]).setAttribute("r",petRay);	
+		}
+		else {
+			compteurFruit=0;
+		}
+	}
+	}
+	var position=1
+function touche(event)
+{
+	var x=event.keyCode;
+	var xp=document.getElementById('perso2');
+	var newX=parseInt(xp.getAttribute('x'));
+	
+	if (x==39)
+		{
+			
+			document.getElementById('perso2').setAttribute('x',++newX);
+		}
+	if(x==37)
+	{
+		document.getElementById('perso2').setAttribute('x',--newX);
+	}
+	if(x==38)
+	{
+
+		position-=0.01;
+		document.getElementById('perso2').setAttribute('transform','scale('+position+')');
+		event.preventDefault();
+		console.log(document.getElementById('perso2').getAttribute('transform'));
+
+	}
+	if(x==40)
+	{
+		position+=0.01;
+		document.getElementById('perso2').setAttribute('transform','scale('+position+')');
+		event.preventDefault();
+	}
+}
+function animer ()
+{	
+
+	nex+=0.5;
+	solnewy++;
+	lunnewy--;
+	lunnewy2--;
+	document.getElementById("soleil").setAttribute("cy",solnewy);
+	document.getElementById("lune").setAttribute("cy",lunnewy);
+	document.getElementById("lune2").setAttribute("cy",lunnewy2);
+	document.getElementById("perso2").setAttribute("x", nex);
+	console.log(timerFunction);
+	if(solnewy>400 && solnewy<600)
+	{
+		couleur1[0]++;
+		couleur1[1]=couleur1[1]-2;
+		newCoul1=couleur1[0];
+		newCoul2=couleur1[1];
+
+		//document.getElementById("ciel").setAttribute("fill","rgb(122, 69, 98)");
+		document.getElementById('coul1').setAttribute("stop-color","rgb("+newCoul1+","+newCoul2+","+255+")");
+		
+		
+	
+
+	}
+
+	else if (solnewy>600 )
+	{
+		rg1--;
+		rg2--;
+		rg3--;
+		document.getElementById('coul1').setAttribute("stop-color","rgb("+rg1+","+rg2+","+rg3+")");
+
+		document.getElementById('lune').setAttribute("cy",lunnewy);
+		op+=0.01;
+		document.getElementById("lune").style.opacity=op;
+
+	}
+	if(lunnewy==100)
+{
+	clearInterval(timerFunction);
+}
+	
+	
+}
+document.getElementById('mainPage').addEventListener('keydown',touche,false)
+</script>
+
+</html> 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8"/>
+		<meta author="nafissa"/>
+		<meta keywords="html"/>
+		<meta description="descriptions"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- adaptation aux différents support-->
+		<title>Calculatrice</title>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		
+		<script type="text/javascript" src="scripts/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/calculatrice.css">
+		<script type="text/javascript" src="js/calculatrice.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				$("#calculatrice").draggable();
+				$( "#blockDrop" ).droppable({
+				      drop: function( event, ui ) {
+				        $( this )
+				          .addClass( "ui-state-highlight" )
+				          $("#calculatrice").hide();
+				          $(this).html($("#affiche").text())
+				      }
+				    });
+			})
+		</script>
+</head>
+<body id="mainPage">
+		<header>
+			<div class="menuBurger"> <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+			<ul >
+					
+					<li class="menu2"><a href="calculatrice.html">CALCULATRICE</a></li>
+					<li class="menu2"><a href="connexion.html" >CONNEXION</a></li>
+					<li class="menu2"><a href="progress.html">PROGRESS</a></li>
+					<li class="menu2"><a href="svg.html" >SVG</a></li>
+					<li class="menu2"><a href="cookie.html">COOKIE</a></li>
+					<li class="menu2"><a href="diaporama.html">DIAPORAMA</a></li>
+				</ul></div>
+				
+			<nav id="navigation">
+				
+				<ul >
+					
+					<li><a href="calculatrice.html">CALCULATRICE</a></li>
+					<li><a href="connexion.html" >CONNEXION</a></li>
+					<li><a href="progress.html">PROGRESS</a></li>
+					<li><a href="svg.html" >SVG</a></li>
+					<li><a href="cookie.html">COOKIE</a></li>
+					<li><a href="diaporama.html">DIAPORAMA</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div id="textePrincipal">
+			<div id="indexp1" class="paragraphe" style="width:50%;">
+				<table id="calculatrice"><tr ><td colspan="4" id="affiche"></td></tr>
+					<tr><td class="touche" id="7" onclick="javascript:recupValeur(7)">7</td>
+					<td class="touche"  id ="8" onclick="javascript:recupValeur(8)">8</td>
+					<td class="touche" id="9" onclick="javascript:recupValeur(9)">9</td>
+					<td class="operateur" id="divise" onclick="javascript:recupValeur('/')">/</td></tr>
+					<tr>
+					<td class="touche" id="4" onclick="javascript:recupValeur(4)">4</td>
+					<td class="touche" id="5" onclick="javascript:recupValeur(5)">5</td>
+					<td class="touche" id="6" onclick="javascript:recupValeur(6)">6</td>
+					<td class="operateur" id="multi" onclick="javascript:recupValeur('*')">*</td></tr>
+					<tr><td class="touche" id="1" onclick="javascript:recupValeur(1)">1</td>
+					<td id="2" onclick="javascript:recupValeur(2)" class="touche">2</td>
+					<td id="3" onclick="javascript:recupValeur(3)" class="touche">3</td>
+					<td id="soustr" onclick="javascript:recupValeur('-')" 
+					class="operateur">-</td></tr>
+					<tr>
+					<td id="0" onclick="javascript:recupValeur(0)" class="touche">0</td>
+					<td id="virgule" onclick="javascript:recupValeur('.')">.</td>
+					<td id="plus" onclick="javascript:recupValeur('+')">+</td>
+					<td id="egal" onclick="javascript:calcul();" class="operateur">=</td></tr>
+					<tr><td id="clear" colspan="4" onclick="javascript:effacer();">Clear</td></tr>
+				</table>
+				<div id="blockDrop"> <p>coucou</p></div>
+				<div id="test" style="visibility: hidden;">
+				<span>nb1</span>
+				<input type="text" name="" id="nb1">
+				<span>nb2</span>
+				<input type="text" name="" id="nb2">
+				<span>operateur</span>
+				<input type="text" name="" id="operat">
+				
+
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--<footer>
+		<hr>
+			<ul>
+				
+				<li><a href="">Mentions légales</a></li>
+				<li><a href="">Copyright</a></li>
+			</ul>
+		</footer>-->
+</body>
+
+</html> 
